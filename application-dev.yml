@@ -1,0 +1,21 @@
+server:
+  port: 8100
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8888/eureka/,http://127.0.0.1:9999/eureka/
+logging:
+  level:
+    root: warn
+    io.argin: debug
+spring:
+  application:
+    name: eureka-provider
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cr7
+    username: root
+    password: 7777
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
